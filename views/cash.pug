@@ -1,0 +1,102 @@
+html
+	head
+		meta(charset="utf-8")
+		title Деньги
+		meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
+		link(rel="stylesheet" href="../stylesheets/uikit.css")
+		link(rel="stylesheet" href="../stylesheets/common-style.css")
+	body
+		.uk-container
+			nav#main_menu.uk-navbar-container(uk-navbar="")
+				.uk-navbar-left
+					ul.uk-navbar-nav
+						li
+							img(src="../images/logo.png" alt="logo")
+						li
+							a(href="#") wDocs
+				.uk-navbar-center
+					// Место для контента
+				.uk-navbar-right
+					ul.uk-navbar-nav
+						li
+							butto1n.uk-button.uk-button-default Выход
+		.uk-container
+			div(uk-grid="")
+				.side-menu(class="uk-width-1-6@m")
+					ul.uk-nav
+						li
+							a(href="/") Документы
+						li
+							a(href="cash") Деньги
+						li
+							a(href="#") История транзакций
+				.main-content(class="uk-width-4-6@m")
+					.uk-container.title
+						div(uk-grid="")
+							div(class="uk-width-1-2@m")
+								h3
+									b
+										| Баланс: 
+										span 1,240,800.00
+										|  $
+							.create(class="uk-width-1-2@m")
+								butto1n.uk-button.uk-button-default(uk-toggle="target: #modal") Отправить средства
+					.uk-card.uk-card-default.uk-card-body.back
+						.uk-inline(class="uk-width-1-1@s")
+							span.uk-form-icon(uk-icon="icon: search")
+							input.uk-input(type="text")
+						.uk-overflow-auto
+							table.uk-table.uk-table-hover.uk-table-middle.uk-table-divider
+								thead
+									tr
+										th.uk-align-left Компния
+										th.uk-align-right Статус платежей
+								tbody
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.red 1,200.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.green 32,800.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.blue 0.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.blue 0.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.blue 0.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.red 1,200.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.green 32,800.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.blue 0.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.blue 0.00
+									tr
+										td.uk-align-left Назвение компании
+										td.uk-align-right.blue 0.00
+		#modal(uk-modal="")
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type="button" uk-close="")
+				h2.uk-modal-title Отправить средства
+				form.uk-grid-small(uk-grid="")
+					div(class="uk-width-1-3@s")
+						input.uk-input(type="text" placeholder="Сумма")
+					div(class="uk-width-2-3@s")
+						.uk-form-controls
+							select#form-stacked-select.uk-select
+								option Компания 1
+								option Компания 2
+					.uk-width-1-1
+						butto1n.uk-button.uk-button-default
+							| Отправить
+							div
+		script(src="../javascripts/uikit.min.js")
+		script(src="../javascripts/uikit-icons.min.js")

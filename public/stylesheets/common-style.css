@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+  background: #f8f8f8!important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.select2-container .select2-choice {
+    background-image: none;
+    transition: all 0.2s linear 0s;
+    border-color: #ddd;
+}
+.select2-container .select2-choice .select2-arrow {
+    background: none;
+    border-left: none;
+}
+
+.select2-container-active .select2-choice, .select2-container-active .select2-choices {
+    box-shadow: none;
+    background: none repeat scroll 0 0 #f5fbfe;
+    border-color: #99baca;
+}
+.select2-drop {
+    box-shadow: none;
+    border-color: #99baca;
+}
+#main_menu {
+  padding: 0px 0px 20px 0px;
+}
+
+#main_menu img {
+  max-width: 50px;
+  margin-top: 15px;
+}
+/* Сайдбар */
+.uk-nav {
+  position: fixed;
+}
+
+.side-menu a {
+  color: #333;
+}
+
+.side-menu {
+  margin-top: 100px;
+}
+/* Главная */
+.main-content {
+  margin-top: 50px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.create {
+  text-align: right;
+}
+
+.uk-card {
+  margin-bottom: 15px!important;
+}
+
+table a {
+  color: #333;
+}
+
+/* Цвета */
+.red {
+  color: #FD6746;
+}
+
+.green {
+  color: #04C26A;
+}
+
+.blue {
+  color: #547EFE;
+}
+
+.gray {
+  color: #CCC;
+}
